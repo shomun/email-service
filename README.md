@@ -52,6 +52,8 @@ Make a HTTP POST request with json body at http://localhost:5000/sendemail
 
 or alternatively a deployed version can be used at http://Emailservice-env.9c3fn5gaqx.ap-southeast-2.elasticbeanstalk.com/sendemail
 
+# Note
+I have removed the API keys for both providers from application.properties. You can use your or I can send through email.
 
 # TODO
 * Circuit-breaker not working properly sometime - need to find the root cause.
