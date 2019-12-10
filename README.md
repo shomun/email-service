@@ -20,7 +20,7 @@ example of request body
 ```
 #Solution overview:
  
-![](docs/solution_overview.png)
+![](docs/solution_overview.PNG)
 
 #Components
 | Component | Responsibility |
