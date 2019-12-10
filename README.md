@@ -5,7 +5,7 @@ The solution provides a REST API to send emails using third-party email service 
 * The system will perform input validation
 * On valid input, system will send email using one of the email service providers over HTTP call
 * If the system fails to send email using the first email service provider due to unavailability, it will fallback and use the second provider  
-#Solution:
+# Solution:
 The solution is designed based on SOLID and clean code principles. The API will accept HTTP POST request in JSON  with following parameters
 ```tos  - comma separated email addresses (required)
  ccs  - comma separated email addresses (optional)
@@ -18,11 +18,11 @@ example of request body
 ```
 {"tos":"shovonz@yahoo.com, monirul.mi2560@gmail.com", "sender":"shovonz@yahoo.com",  "subject": "Good Morning ", body": "Hi , This is a test body"}
 ```
-#Solution overview:
+# Solution overview:
  
 ![](docs/solution_overview.PNG)
 
-#Components
+# Components
 | Component | Responsibility |
 | --- | --- |	
 | EmailController | 	It is spring RestController to accept user’s input, validate and on valid input delegate to EmailService | 
@@ -34,11 +34,11 @@ example of request body
 | PostHttpCommand | 	Execute a http post request to external APIs | 
 
 
-#Fail-Over Solution:
+# Fail-Over Solution:
 Fail-over solution is provided based on circuit-breaker patter. When default or the first provider fails to send email due to unavailability, the system will call for fallback provider.
 Current solution used Spring-cloud Hystrix to handle fail-over.
 
-#How to run
+# How to run
 Gradle is required to build the solution. It is assumed gradle is available. Run the following gradle command
 ```
 gradlew clean build
