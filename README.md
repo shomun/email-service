@@ -53,3 +53,6 @@ Make a HTTP POST request with json body at http://localhost:5000/sendemail
 or alternatively a deployed version can be used at http://Emailservice-env.9c3fn5gaqx.ap-southeast-2.elasticbeanstalk.com/sendemail
 
 
+# TODO
+* Circuit-breaker not working properly sometime - need to find the root cause.
+* Need to add more unit/functional test.
